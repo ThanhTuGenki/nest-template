@@ -5,7 +5,6 @@ import { AppService } from './app.service';
 import { databaseConfig, envSchema } from '@configs/configuration.config';
 import { PrismaModule } from '@core/prisma/prisma.module';
 import { DriveAccountsModule } from '@drive-account/drive-account.module';
-import { UserModule } from '@user/user.module';
 
 @Module({
 	imports: [
@@ -31,9 +30,8 @@ import { UserModule } from '@user/user.module';
 		}),
 		PrismaModule,
 		DriveAccountsModule,
-		UserModule,
 	],
 	controllers: [AppController],
 	providers: [AppService],
 })
-export class AppModule {}
+export class AppModule { }
