@@ -50,10 +50,10 @@ export abstract class AppError extends Error {
 			stack: this.stack,
 			originalError: this.originalError
 				? {
-						name: this.originalError.name,
-						message: this.originalError.message,
-						stack: this.originalError.stack,
-					}
+					name: this.originalError.name,
+					message: this.originalError.message,
+					stack: this.originalError.stack,
+				}
 				: undefined,
 		};
 	}
@@ -69,10 +69,10 @@ export abstract class AppError extends Error {
 					context: this.context,
 					originalError: this.originalError
 						? {
-								name: this.originalError.name,
-								message: this.originalError.message,
-								stack: this.originalError.stack,
-							}
+							name: this.originalError.name,
+							message: this.originalError.message,
+							stack: this.originalError.stack,
+						}
 						: undefined,
 				}),
 			},

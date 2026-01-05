@@ -4,7 +4,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { databaseConfig, envSchema } from '@configs/configuration.config';
 import { PrismaModule } from '@core/prisma/prisma.module';
-import { DriveAccountsModule } from '@drive-account/drive-account.module';
+import { TodoModule } from './todo/todo.module';
 
 @Module({
 	imports: [
@@ -29,7 +29,7 @@ import { DriveAccountsModule } from '@drive-account/drive-account.module';
 			},
 		}),
 		PrismaModule,
-		DriveAccountsModule,
+		TodoModule,
 	],
 	controllers: [AppController],
 	providers: [AppService],

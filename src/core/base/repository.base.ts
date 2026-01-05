@@ -78,8 +78,7 @@ export abstract class PrismaBaseRepository<
 	TPrismaModel,
 	TPrismaCreateInput,
 	TPrismaDelegate extends PrismaDelegateConstraint = any,
-> implements IBaseRepository<TEntity>
-{
+> implements IBaseRepository<TEntity> {
 	/**
 	 * The default (global) Prisma model delegate (e.g., this.prisma.driveAccount).
 	 */

@@ -18,7 +18,7 @@ export abstract class BaseEntity<T> {
 	 * Base constructor is kept empty.
 	 * Initialization is handled by subclasses.
 	 */
-	protected constructor() {}
+	protected constructor() { }
 
 	/**
 	 * [Abstract] Subclasses must implement this.
